@@ -1,5 +1,5 @@
 const clientId = "72262";
-const redirectUri = "https://qpac-challege-2024.netlify.app";
+const redirectUri = "https://qpac-challenge-2024.netlify.app";
 const scope = "read,activity:read_all";
 
 document.getElementById("login-btn").addEventListener("click", () => {
