@@ -1,0 +1,25 @@
+# Node.js 관련
+node_modules/
+package-lock.json
+
+# 빌드 출력물
+dist/
+
+# 환경 설정 파일
+.env
+
+# OS별/IDE 관련
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+# Linux
+.cache/
+
+# Netlify 관련
+.netlify/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
