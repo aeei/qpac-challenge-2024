@@ -30,9 +30,25 @@ if (code) {
         .then((data) => {
           document.getElementById(
             "result"
-          ).innerText = `Total Ride Distance: ${data.totalDistance.toFixed(
-            2
-          )} km`;
+            // ).innerText = `Total Ride Distance: ${data.totalDistance.toFixed(
+            //   2
+            // )} km`;
+          ).innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Circle border -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#D32F2F" stroke-width="10" />
+  <!-- Inner text -->
+  <text x="50%" y="40%" text-anchor="middle" fill="#D32F2F" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    QPAC 2024
+  </text>
+  <text x="50%" y="50%" text-anchor="middle" fill="#D32F2F" font-size="14" font-family="Arial, sans-serif">
+    2024-09-01 ~ 2024-11-30
+  </text>
+  <text x="50%" y="60%" text-anchor="middle" fill="#D32F2F" font-size="16" font-family="Arial, sans-serif" font-weight="bold">
+    ${data.totalDistance.toFixed(2)}km 달성
+  </text>
+</svg>
+          `;
         });
     })
     .catch((err) => console.error(err));
