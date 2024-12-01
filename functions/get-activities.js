@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 
 async function fetchActivitiesPage(accessToken, page = 1, perPage = 200) {
   const response = await fetch(
-    `https://www.strava.com/api/v3/athlete/activities?page=${page}&per_page=${perPage}`,
+    `https://www.strava.com/api/v3/athlete/activities?page=${page}&per_page=${perPage}&before=1732978800&after=1725116400`,
     {
       headers: { Authorization: `Bearer ${accessToken}` },
     }
